@@ -1,0 +1,25 @@
+---
+layout: default
+title: CONDOM CHINA
+---
+{% include header.html param=page.name lang=page.lang %}
+
+<div class="article">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="title row">
+                <div class="col-md-12">
+                    <h2 class="pull-left">{{ page.label }}</h2>
+                    <div class="sub pull-left">|&nbsp;&nbsp;&nbsp;&nbsp;{{ page.greeting }}</div>
+                </div>
+            </div>
+            <div class="row line"></div>
+            <div class="row content">
+                <div class="col-md-12">
+                    <h3>{{ page.article_title }}</h3>
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

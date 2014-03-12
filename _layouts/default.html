@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ page.title }}</title>
+        <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/site.css">
+    </head>
+    <body>
+        <div class="site">
+            <div class="container">
+
+                {{ content }}
+
+                {% include footer.html %}
+            </div>
+        </div>
+    </body>
+</html>

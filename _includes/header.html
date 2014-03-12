@@ -1,0 +1,65 @@
+
+<div class="header">
+    <div class="row">
+        <div class="col-md-12">
+            <a href="http://www.condomcn.com">
+                <div class="logo">
+                    <h1>CondemCN</h1>
+                </div>
+            </a>
+            {% if page.lang == "cn" %}
+
+            {% assign company="公司" %}
+            {% assign product="产品展示" %}
+            {% assign strength="实力" %}
+            {% assign cooperation="合作" %}
+            {% assign contact="联系我们" %}
+
+            {% assign link1="/kr/" %}
+            {% assign label1="KR" %}
+            {% assign link2="/en/" %}
+            {% assign label2="EN" %}
+
+            {% elsif page.lang == "en" %}
+
+            {% assign company="company" %}
+            {% assign product="product" %}
+            {% assign strength="technology" %}
+            {% assign cooperation="cooperation" %}
+            {% assign contact="contact us" %}
+
+            {% assign link1="/kr/" %}
+            {% assign label1="KR" %}
+            {% assign link2="/" %}
+            {% assign label2="CN" %}
+
+            {% elsif page.lang == "kr" %}
+
+            {% assign company="회사" %}
+            {% assign product="제품" %}
+            {% assign strength="실력" %}
+            {% assign cooperation="협력" %}
+            {% assign contact="연락" %}
+
+            {% assign link1="/en/" %}
+            {% assign label1="EN" %}
+            {% assign link2="/" %}
+            {% assign label2="CN" %}
+
+            {%endif%}
+
+            <ul class="menu">
+                <li><a href="index.html"{% if include.param == "company"%} class="active"{% endif %}>{{company}}</a></li>
+                <li><a href="product.html"{% if include.param == "product"%} class="active"{% endif %}>{{product}}</a></li>
+                <li><a href="strength.html"{% if include.param == "strength"%} class="active"{% endif %}>{{strength}}</a></li>
+                <li><a href="cooperation.html"{% if include.param == "cooperation"%} class="active"{% endif %}>{{cooperation}}</a></li>
+                <li><a href="contact.html"{% if include.param == "contact"%} class="active"{% endif %}>{{contact}}</a></li>
+            </ul>
+            
+            <ul class="langs">
+                <li><a href="{{ link1 }}">{{ label1 }}</a></li>
+                <li><a href="{{ link2 }}">{{ label2 }}</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
