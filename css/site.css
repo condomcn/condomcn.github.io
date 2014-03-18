@@ -82,7 +82,7 @@
     margin-right: 10px;
     text-decoration: none;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 14px;
     color: #666;
     font-weight: bold;
 }
@@ -92,7 +92,7 @@
 }
 
 .menu > li:hover .sub{
-    bottom: -10px;
+    bottom: -12px;
     opacity: 1;
 }
 
